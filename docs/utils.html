@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>utils</title>
+    <meta name="generator" content="pydoctor 25.10.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          game_backup/test_battleship/setup/game/setup_backup/utils <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="utils.html" class="internal-link" title="This module">utils</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#auto_place_computer" class="internal-link" title="utils.auto_place_computer">auto<wbr></wbr>_place<wbr></wbr>_computer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#can_place" class="internal-link" title="utils.can_place">can<wbr></wbr>_place</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#coord_to_index" class="internal-link" title="utils.coord_to_index">coord<wbr></wbr>_to<wbr></wbr>_index</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#count_ships" class="internal-link" title="utils.count_ships">count<wbr></wbr>_ships</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#create_board" class="internal-link" title="utils.create_board">create<wbr></wbr>_board</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#find_ship_cells" class="internal-link" title="utils.find_ship_cells">find<wbr></wbr>_ship<wbr></wbr>_cells</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#load_board" class="internal-link" title="utils.load_board">load<wbr></wbr>_board</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#mark_around_sunk" class="internal-link" title="utils.mark_around_sunk">mark<wbr></wbr>_around<wbr></wbr>_sunk</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#place_ship" class="internal-link" title="utils.place_ship">place<wbr></wbr>_ship</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#save_board" class="internal-link" title="utils.save_board">save<wbr></wbr>_board</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#LETTERS" class="internal-link" title="utils.LETTERS">LETTERS</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapse-sidebar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <main class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="utils.html" class="internal-link">utils</a></code></code></h1>
+          <div id="show-private">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="split-tables">
+          <table class="children sortable" id="id9">
+  
+  
+  <tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#auto_place_computer" class="internal-link" title="utils.auto_place_computer">auto<wbr></wbr>_place<wbr></wbr>_computer</a></code></td>
+    <td>Автоматически расставляет корабли для компьютера.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#can_place" class="internal-link" title="utils.can_place">can<wbr></wbr>_place</a></code></td>
+    <td>Проверяет, можно ли разместить корабль заданного размера в указанной позиции.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#coord_to_index" class="internal-link" title="utils.coord_to_index">coord<wbr></wbr>_to<wbr></wbr>_index</a></code></td>
+    <td>Преобразует буквенно-цифровые координаты в индексы строки и столбца.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#count_ships" class="internal-link" title="utils.count_ships">count<wbr></wbr>_ships</a></code></td>
+    <td>Подсчитывает количество кораблей на доске.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#create_board" class="internal-link" title="utils.create_board">create<wbr></wbr>_board</a></code></td>
+    <td>Создаёт пустую игровую доску размером 10x10.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#find_ship_cells" class="internal-link" title="utils.find_ship_cells">find<wbr></wbr>_ship<wbr></wbr>_cells</a></code></td>
+    <td>Находит все клетки корабля, содержащего указанную клетку, с помощью поиска в глубину.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#load_board" class="internal-link" title="utils.load_board">load<wbr></wbr>_board</a></code></td>
+    <td>Загружает доску из файла.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#mark_around_sunk" class="internal-link" title="utils.mark_around_sunk">mark<wbr></wbr>_around<wbr></wbr>_sunk</a></code></td>
+    <td>Помечает клетки вокруг потопленного корабля как промахи ('O').</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#place_ship" class="internal-link" title="utils.place_ship">place<wbr></wbr>_ship</a></code></td>
+    <td>Размещает корабль на доске в указанной позиции.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#save_board" class="internal-link" title="utils.save_board">save<wbr></wbr>_board</a></code></td>
+    <td>Сохраняет доску в файл.</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#LETTERS" class="internal-link" title="utils.LETTERS">LETTERS</a></code></td>
+    <td><span class="rst-undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="child-list">
+          <div class="basefunction">
+  
+  
+  <a name="utils.auto_place_computer">
+    
+  </a>
+  <a name="auto_place_computer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">auto_place_computer</span><span class="function-signature">():</span>
+    
+    <a class="headerLink" href="#auto_place_computer" title="utils.auto_place_computer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Автоматически расставляет корабли для компьютера.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">list[list[str]] | None</td><td class="fieldArgDesc">Игровая доска с расставленными кораблями или None, если расстановка не удалась.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>Никаких исключений не выбрасывается.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="utils.can_place">
+    
+  </a>
+  <a name="can_place">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">can_place</span><span class="function-signature">(<span class="rst-sig-param">board, </span><span class="rst-sig-param">row, </span><span class="rst-sig-param">col, </span><span class="rst-sig-param">size, </span><span class="rst-sig-param">horizontal</span>):</span>
+    
+    <a class="headerLink" href="#can_place" title="utils.can_place">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Проверяет, можно ли разместить корабль заданного размера в указанной позиции.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">board:</span>list[list[str]]</td><td class="fieldArgDesc">Игровая доска.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">row:</span>int</td><td class="fieldArgDesc">Начальная строка (0-9).</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">col:</span>int</td><td class="fieldArgDesc">Начальный столбец (0-9).</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">size:</span>int</td><td class="fieldArgDesc">Длина корабля.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">horizontal:</span>bool</td><td class="fieldArgDesc">Ориентация корабля (True — горизонтально, False — вертикально).</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">bool</td><td class="fieldArgDesc">True, если размещение возможно, иначе False.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>Никаких исключений не выбрасывается.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="utils.coord_to_index">
+    
+  </a>
+  <a name="coord_to_index">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">coord_to_index</span><span class="function-signature">(<span class="rst-sig-param">letter, </span><span class="rst-sig-param">number</span>):</span>
+    
+    <a class="headerLink" href="#coord_to_index" title="utils.coord_to_index">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Преобразует буквенно-цифровые координаты в индексы строки и столбца.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">letter:</span>str</td><td class="fieldArgDesc">Буква строки (от 'А' до 'К').</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">number:</span>int | float</td><td class="fieldArgDesc">Номер столбца (от 1 до 10).</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">tuple[int, int] | None</td><td class="fieldArgDesc">Кортеж (row, col) или None, если координаты некорректны.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>Никаких исключений не выбрасывается.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="utils.count_ships">
+    
+  </a>
+  <a name="count_ships">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">count_ships</span><span class="function-signature">(<span class="rst-sig-param">board</span>):</span>
+    
+    <a class="headerLink" href="#count_ships" title="utils.count_ships">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Подсчитывает количество кораблей на доске.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">board:</span>list[list[str]]</td><td class="fieldArgDesc">Игровая доска.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">int</td><td class="fieldArgDesc">Количество кораблей (целое число).</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>Никаких исключений не выбрасывается.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="utils.create_board">
+    
+  </a>
+  <a name="create_board">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">create_board</span><span class="function-signature">():</span>
+    
+    <a class="headerLink" href="#create_board" title="utils.create_board">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Создаёт пустую игровую доску размером 10x10.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">list[list[str]]</td><td class="fieldArgDesc">Двумерный список 10x10, заполненный символом '~'.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="utils.find_ship_cells">
+    
+  </a>
+  <a name="find_ship_cells">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">find_ship_cells</span><span class="function-signature">(<span class="rst-sig-param">board, </span><span class="rst-sig-param">row, </span><span class="rst-sig-param">col</span>):</span>
+    
+    <a class="headerLink" href="#find_ship_cells" title="utils.find_ship_cells">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Находит все клетки корабля, содержащего указанную клетку, с помощью поиска в глубину.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">board:</span>list[list[str]]</td><td class="fieldArgDesc">Игровая доска.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">row:</span>int</td><td class="fieldArgDesc">Строка начальной клетки.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">col:</span>int</td><td class="fieldArgDesc">Столбец начальной клетки.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">list[tuple[int, int]]</td><td class="fieldArgDesc">Список координат (row, col) всех клеток корабля.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>Никаких исключений не выбрасывается.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="utils.load_board">
+    
+  </a>
+  <a name="load_board">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">load_board</span><span class="function-signature">(<span class="rst-sig-param">filename</span>):</span>
+    
+    <a class="headerLink" href="#load_board" title="utils.load_board">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Загружает доску из файла.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">filename:</span>str</td><td class="fieldArgDesc">Имя файла для загрузки.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">list[list[str]] | None</td><td class="fieldArgDesc">Загруженная доска или None, если произошла ошибка.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>Исключения перехватываются внутри функции.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="utils.mark_around_sunk">
+    
+  </a>
+  <a name="mark_around_sunk">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">mark_around_sunk</span><span class="function-signature">(<span class="rst-sig-param">board, </span><span class="rst-sig-param">row, </span><span class="rst-sig-param">col</span>):</span>
+    
+    <a class="headerLink" href="#mark_around_sunk" title="utils.mark_around_sunk">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Помечает клетки вокруг потопленного корабля как промахи ('O').</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">board:</span>list[list[str]]</td><td class="fieldArgDesc">Игровая доска.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">row:</span>int</td><td class="fieldArgDesc">Строка любой клетки потопленного корабля.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">col:</span>int</td><td class="fieldArgDesc">Столбец любой клетки потопленного корабля.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">None</td><td class="fieldArgDesc">None (функция изменяет переданную доску).</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>Никаких исключений не выбрасывается.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="utils.place_ship">
+    
+  </a>
+  <a name="place_ship">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">place_ship</span><span class="function-signature">(<span class="rst-sig-param">board, </span><span class="rst-sig-param">row, </span><span class="rst-sig-param">col, </span><span class="rst-sig-param">size, </span><span class="rst-sig-param">horizontal</span>):</span>
+    
+    <a class="headerLink" href="#place_ship" title="utils.place_ship">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Размещает корабль на доске в указанной позиции.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">board:</span>list[list[str]]</td><td class="fieldArgDesc">Игровая доска.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">row:</span>int</td><td class="fieldArgDesc">Начальная строка (0-9).</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">col:</span>int</td><td class="fieldArgDesc">Начальный столбец (0-9).</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">size:</span>int</td><td class="fieldArgDesc">Длина корабля.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">horizontal:</span>bool</td><td class="fieldArgDesc">Ориентация корабля (True — горизонтально, False — вертикально).</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">None</td><td class="fieldArgDesc">None (функция изменяет переданную доску).</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>Никаких исключений не выбрасывается.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="utils.save_board">
+    
+  </a>
+  <a name="save_board">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span>&#160;<span class="py-defname">save_board</span><span class="function-signature">(<span class="rst-sig-param">board, </span><span class="rst-sig-param">filename</span>):</span>
+    
+    <a class="headerLink" href="#save_board" title="utils.save_board">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Сохраняет доску в файл.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">board:</span>list[list[str]]</td><td class="fieldArgDesc">Игровая доска.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">filename:</span>str</td><td class="fieldArgDesc">Имя файла для сохранения.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">bool</td><td class="fieldArgDesc">True, если сохранение успешно, иначе False.</td></tr></table><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>Исключения перехватываются внутри функции.</td></tr></table></div>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="utils.LETTERS">
+    
+  </a>
+  <a name="LETTERS">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">LETTERS</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#LETTERS" title="utils.LETTERS">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code><span class="rst-variable-quote">'</span><span class="rst-variable-string">АБВГДЕЖЗИК</span><span class="rst-variable-quote">'</span></code></pre></td></tr></table>
+  </div>
+</div>
+        </div>
+      
+      </main>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for game_backup/test_battleship/setup/game/setup_backup/utils,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    25.10.1 at 2025-12-12 02:50:49.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
