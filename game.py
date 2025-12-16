@@ -153,8 +153,6 @@ class Game:
 
             if sunk:
                 mark_around_sunk(self.player_board, r, c)
-                # Не сбрасываем hunt mode, если остались другие корабли
-                # Компьютер может продолжать стрелять
                 self.hunting = False
                 self.last_hit = None
                 self.directions_to_try = []
@@ -309,7 +307,6 @@ def main():
                     if sunk:
                         print("💥 Попал! Корабль потоплен!")
                         game.print_boards()
-                        # Продолжаем ход компьютера после потопления
                         if count_ships(game.player_board) == 0:
                             break
                         continue
