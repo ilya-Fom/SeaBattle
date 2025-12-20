@@ -34,6 +34,36 @@ class TestBattleship(unittest.TestCase):
         self.assertIsNone(coord_to_index('', 5))
         # Не число (передаём строку)
         self.assertIsNone(coord_to_index('А', 'не число'))
+        
+    def test_save_board_raises_exceptions(self):
+        """Тест на выброс исключений в save_board"""
+        board = create_board()
+        
+        # 1. Неверный тип доски (не список)
+        with self.assertRaises(ValueError):
+            save_board("не доска", "test.txt")
+        
+        # 2. Доска неправильного размера
+        with self.assertRaises(ValueError):
+            save_board([['~'] * 10] * 8, "test.txt")  # 8 строк вместо 10
+        
+        # 3. Строка неправильного размера
+        bad_board = [['~'] * 8 for _ in range(10)]  # 8 столбцов вместо 10
+        with self.assertRaises(ValueError):
+            save_board(bad_board, "test.txt")
+        
+        # 4. Недопустимый символ в доске
+        bad_board = create_board()
+        bad_board[0][0] = 'Z'  # Неправильный символ
+        with self.assertRaises(ValueError):
+            save_board(bad_board, "test.txt")
+        
+        # 5. Ошибка записи в файл (системная папка)
+        with self.assertRaises(IOError):
+            if os.name == 'posix':  # Linux/Mac
+                save_board(board, "/root/test.txt")
+            else:  # Windows
+                save_board(board, "C:\\Windows\\System32\\test.txt")
 
 
 if __name__ == '__main__':
