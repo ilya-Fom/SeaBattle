@@ -252,7 +252,6 @@ def load_board(filename):
     except:
         return None
 
-
 def save_board(board, filename):
     """
     Сохраняет доску в файл.
@@ -261,14 +260,28 @@ def save_board(board, filename):
     :type board: list[list[str]]
     :param filename: Имя файла для сохранения.
     :type filename: str
-    :returns: True, если сохранение успешно, иначе False.
+    :returns: True, если сохранение успешно.
     :rtype: bool
-    :raises: Исключения перехватываются внутри функции.
+    :raises IOError: При ошибке записи в файл.
+    :raises ValueError: Если board не является корректной доской.
     """
+    # Проверка корректности доски
+    if not isinstance(board, list) or len(board) != 10:
+        raise ValueError("Доска должна быть списком из 10 строк")
+    
+    for row in board:
+        if not isinstance(row, list) or len(row) != 10:
+            raise ValueError("Каждая строка доски должна быть списком из 10 символов")
+        for cell in row:
+            if cell not in ['~', 'S', 'X', 'O']:
+                raise ValueError(f"Недопустимый символ в доске: '{cell}'")
+    
+    # Попытка записи
     try:
-        with open(filename, "w") as f:
+        with open(filename, "w", encoding="utf-8") as f:
             for row in board:
                 f.write("".join(row) + "\n")
         return True
-    except:
-        return False
+    except (IOError, OSError, PermissionError) as e:
+        # Преобразуем файловые ошибки в наше исключение
+        raise IOError(f"Ошибка записи в файл '{filename}': {str(e)}")
