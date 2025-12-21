@@ -178,7 +178,7 @@ def coord_to_index(letter, number):
     """
     if not letter:
         return None
-    if not isinstance(number, (int, float)):
+    if not isinstance(number, int):
         return None
 
     letter = letter.upper().strip()
@@ -252,6 +252,7 @@ def load_board(filename):
     except:
         return None
 
+
 def save_board(board, filename):
     """
     Сохраняет доску в файл.
@@ -268,14 +269,14 @@ def save_board(board, filename):
     # Проверка корректности доски
     if not isinstance(board, list) or len(board) != 10:
         raise ValueError("Доска должна быть списком из 10 строк")
-    
+
     for row in board:
         if not isinstance(row, list) or len(row) != 10:
             raise ValueError("Каждая строка доски должна быть списком из 10 символов")
         for cell in row:
             if cell not in ['~', 'S', 'X', 'O']:
                 raise ValueError(f"Недопустимый символ в доске: '{cell}'")
-    
+
     # Попытка записи
     try:
         with open(filename, "w", encoding="utf-8") as f:
